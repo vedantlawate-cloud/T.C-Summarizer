@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  :root { color-scheme: light dark; }
+  body { width: 400px; font: 14px/1.5 system-ui, sans-serif; margin: 0; padding: 14px; }
+  button { width: 100%; padding: 10px; font-size: 14px; cursor: pointer; }
+  #status { margin-top: 10px; opacity: .75; }
+  #out { white-space: pre-wrap; margin-top: 8px; max-height: 300px; overflow-y: auto; }
+  h4 { margin: 14px 0 4px; }
+  #flags { max-height: 200px; overflow-y: auto; font-size: 13px; }
+  .flag { margin: 6px 0; padding: 6px 8px; background: rgba(245,158,11,.15); border-left: 3px solid #f59e0b; }
+  .flag b { display: block; }
+  .note { opacity: .6; font-size: 12px; margin-top: 10px; }
+</style>
+</head>
+<body>
+  <div id="consent" hidden>
+    <p><b>Before you start</b></p>
+    <p>When you click Summarize, the text of the current page is sent to our server and to Google's Gemini API to generate the summary. It is not stored by us or linked to your identity. Don't use this on pages showing private information.</p>
+    <button id="accept">I understand, continue</button>
+  </div>
+  <div id="main" hidden>
+    <button id="go">Summarize this page</button>
+    <div id="status"></div>
+    <div id="out"></div>
+    <h4 id="flagsTitle" hidden>Clauses to check</h4>
+    <div id="flags"></div>
+    <div class="note">AI summaries can be wrong. Not legal advice.</div>
+  </div>
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

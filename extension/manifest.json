@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "T&C Summarizer",
+  "version": "1.0.0",
+  "description": "Summarize terms and conditions and privacy policies in plain English and flag risky clauses.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://tc-summarizer-api.tc-summarizer-api.workers.dev/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}

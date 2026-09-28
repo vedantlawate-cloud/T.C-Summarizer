@@ -1,0 +1,11 @@
+name = "tc-summarizer-api"
+main = "index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+MODEL = "gemini-2.5-flash-lite"   # change if Google retires/renames the model
+DAILY_LIMIT = "15"                # summaries per install per day (IP limit is 4x this)
+
+[[kv_namespaces]]
+binding = "RATE"
+id = "33c27004b0d7472388204ab5bd06e016"      # from: npx wrangler kv namespace create RATE
