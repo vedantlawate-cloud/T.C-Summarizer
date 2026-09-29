@@ -8,4 +8,4 @@
 
 **Local storage:** The extension stores an anonymous install ID and your consent choice in your browser.
 
-**Contact:** your-email@example.com
+**Contact:** vedup1008@gmail.com
